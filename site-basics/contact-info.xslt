@@ -32,7 +32,7 @@
                 <xsl:apply-templates select="preceding-sibling::system-block/system-data-structure[@definition-path='Site Contacts']"/>
             </xsl:when>
             <xsl:when test="following-sibling::system-block/system-data-structure[@definition-path='Site Contacts']">
-                <xsl:apply-templates select="preceding-sibling::system-block/system-data-structure[@definition-path='Site Contacts']"/>
+                <xsl:apply-templates select="following-sibling::system-block/system-data-structure[@definition-path='Site Contacts']"/>
             </xsl:when>
         </xsl:choose>
     </xsl:template>
