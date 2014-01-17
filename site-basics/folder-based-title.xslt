@@ -9,16 +9,16 @@
 			<div class="site-name unit-5-7">
 			<h1>
 				
-				<xsl:choose>
-            <!-- if this folder has the metadata title set, use that title and folder path -->
-            <xsl:when test="//system-folder[@current='true']/title">
-                <xsl:apply-templates mode="hastitle" select="//system-folder[@current='true']"/>
-            </xsl:when>
-            <!-- otherwise, go up a level -->
-            <xsl:when test="not(//system-folder[@current='true']/title)">
-                <xsl:apply-templates mode="notitle" select="//system-folder[@current='true']"/>
-            </xsl:when>
-        </xsl:choose>
+			<xsl:choose>
+            	<!-- if this folder has the metadata title set, use that title and folder path -->
+				<xsl:when test="//system-folder[@current='true']/title">
+                	<xsl:apply-templates mode="hastitle" select="//system-folder[@current='true']"/>
+				</xsl:when>
+				<!-- otherwise, go up a level -->
+				<xsl:when test="not(//system-folder[@current='true']/title)">
+                	<xsl:apply-templates mode="notitle" select="//system-folder[@current='true']"/>
+				</xsl:when>
+			</xsl:choose>
 				
 			</h1>
 			</div>
