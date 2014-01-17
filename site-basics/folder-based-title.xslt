@@ -4,8 +4,12 @@
     //this looks in an index block for the current folder and gets the title and path out of the folder's metadata
     -->
     <xsl:template match="/">
-        
-        <xsl:choose>
+    
+    <header class="row">
+			<div class="site-name unit-5-7">
+			<h1>
+				
+				<xsl:choose>
             <!-- if this folder has the metadata title set, use that title and folder path -->
             <xsl:when test="//system-folder[@current='true']/title">
                 <xsl:apply-templates mode="hastitle" select="//system-folder[@current='true']"/>
@@ -15,7 +19,10 @@
                 <xsl:apply-templates mode="notitle" select="//system-folder[@current='true']"/>
             </xsl:when>
         </xsl:choose>
-    
+				
+			</h1>
+			</div>
+		</header>
     </xsl:template>
     
     <!-- probably, you'd want to do the selecting higher up in the tree, but this works... -->
