@@ -1,30 +1,40 @@
-<ul class="element-list internal-users">
-	<li>
-		<a href="https://my.evergreen.edu">
-			<img alt="User" src="/render/file.act?path=/_inc/images/user-32.png" height="10" width="10" /> my.evergreen.edu
-		</a>
-	</li>
-	<li>
-		<a href="http://evergreen.edu/webmail">Webmail</a>
-	</li>
-</ul>
-<form action="/search/home" class="top-search" method="get" role="search">
-	<label for="q">Search</label>
-	<input id="top-search-query" name="q" placeholder="Search" type="search" /><!-- --><button class="top-search-button"><img alt="Search" src="/render/file.act?path=/_inc/images/search-32.png" /></button>
-	<ul class="element-list search-tools">
-		<li class="internal-users-alt">
-			<a href="https://my.evergreen.edu">
-				<img alt="User" src="/render/file.act?path=/_inc/images/user-32.png" height="10" width="10" /> my.evergreen.edu
-			</a>
-		</li>
-		<li class="internal-users-alt">
-			<a href="http://evergreen.edu/webmail">Webmail</a>
-		</li>
-		<li>
-			<a href="http://evergreen.edu/directories.htm">Directories</a>
-		</li>
-	</ul>
-</form>
+<div class="header-dropdowns">
+	<section>
+		<input type="checkbox" id="internal-users-flag" name="header-toggle"/>
+		<ul class="element-list header-dropdown internal-users">
+			<li>
+				<a href="https://my.evergreen.edu">
+					<img alt="User" src="/render/file.act?path=/_inc/images/user-32.png" height="10" width="10" /> my.evergreen.edu
+				</a>
+			</li>
+			<li>
+				<a href="http://evergreen.edu/webmail">Webmail</a>
+			</li>
+		</ul>
+	</section>
+	<section>
+		<input type="checkbox" id="search-flag" name="header-toggle"/>
+		<div class="header-dropdown">
+			<form action="/search/home" class="top-search" method="get" role="search">
+				<label for="q">Search</label>
+				<input id="top-search-query" name="q" placeholder="Search" type="search" /><!-- --><button class="top-search-button"><img alt="Search" src="/render/file.act?path=/_inc/images/search-32.png" /></button>
+				<ul class="element-list search-tools">
+					<li class="internal-users-alt">
+						<a href="https://my.evergreen.edu">
+							<img alt="User" src="/render/file.act?path=/_inc/images/user-32.png" height="10" width="10" /> my.evergreen.edu
+						</a>
+					</li>
+					<li class="internal-users-alt">
+						<a href="http://evergreen.edu/webmail">Webmail</a>
+					</li>
+					<li>
+						<a href="http://evergreen.edu/directories.htm">Directories</a>
+					</li>
+				</ul>
+			</form>
+		</div>
+	</section>
+</div>
 <header class="page-header">
 	<div class="logo">
 		<a href="http://evergreen.edu">
@@ -32,11 +42,11 @@
 		</a>
 	</div>
 	<div class="off-canvas">
-		<a class="search-toggle" href="#search">
+		<label class="search-toggle" for="search-flag">
 			<img alt="Search" src="/render/file.act?path=/_inc/images/search-w32.png" />
-		</a>
-		<a class="student-toggle" href="#student-links">
+		</label>
+		<label class="student-toggle" for="internal-users-flag">
 			<img alt="Profile" src="/render/file.act?path=/_inc/images/user-w32.png" />
-		</a>
+		</label>
 	</div>
 </header>
