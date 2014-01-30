@@ -13,10 +13,10 @@
         <nav class="top-nav" role="navigation">
             <ul class="top-nav-list">
                 <li class="is-current-section"><a class="top-nav-link" href="site://evergreen.edu - old design/home">Home</a></li>
-                <li><a class="top-nav-link" href="/academics/home">Aca­demics</a></li>
+                <li><a class="top-nav-link" href="/academics/home">Academics</a></li>
                 <li><a class="top-nav-link" href="/campuslife/home">Campus Life</a></li>
                 <li><a class="top-nav-link" href="/costs/home">Costs &amp; Aid</a></li>
-                <li><a class="top-nav-link" href="site://Admissions/admissions/index">Admis­sions</a></li>
+                <li><a class="top-nav-link" href="site://Admissions/admissions/index">Admission<span class="gt32">s</span></a></li>
                 
             </ul>
         </nav>
@@ -57,10 +57,10 @@
         <nav class="top-nav" role="navigation">
             <ul class="top-nav-list">
                 <li><a class="top-nav-link" href="site://evergreen.edu - old design/home">Home</a></li>
-                <li class="{$academics}"><a class="top-nav-link" href="/academics/home">Aca­demics</a></li>
+                <li class="{$academics}"><a class="top-nav-link" href="/academics/home">Academics</a></li>
                 <li class="{$campus-life}"><a class="top-nav-link" href="/campuslife/home">Campus Life</a></li>
                 <li class="{$costs-aid}"><a class="top-nav-link" href="/costs/home">Costs &amp; Aid</a></li>
-                <li class="{$admissions}"><a class="top-nav-link" href="site://Admissions/admissions/index">Admis­sions</a></li>
+                <li class="{$admissions}"><a class="top-nav-link" href="site://Admissions/admissions/index">Admission<span class="gt32">s</span></a></li>
                 
             </ul>
         </nav>
