@@ -101,22 +101,22 @@
                             <ul class="tertiary-nav-list">
                                 <xsl:if test="navigation/socialmedia/wordpress/text()">
                                     <li>
-                                        <a href="http://blogs.evergreen.edu/{navigation/socialmedia/wordpress}">Blog</a>
+                                        <a class="ext-blog" href="http://blogs.evergreen.edu/{navigation/socialmedia/wordpress}">Blog</a>
                                     </li>
                                 </xsl:if>
                                 <xsl:if test="navigation/socialmedia/twitter/text()">
                                     <li>
-                                        <a href="http://twitter.com/{navigation/socialmedia/twitter}">Twitter</a>
+                                        <a class="ext-twitter" href="http://twitter.com/{navigation/socialmedia/twitter}">Twitter</a>
                                     </li>
                                 </xsl:if>
                                 <xsl:if test="navigation/socialmedia/facebook/text()">
                                     <li>
-                                        <a href="{navigation/socialmedia/facebook}">Facebook</a>
+                                        <a class="ext-facebook" href="{navigation/socialmedia/facebook}">Facebook</a>
                                     </li>
                                 </xsl:if>
                                 <xsl:if test="navigation/socialmedia/youtube/text()">
                                     <li>
-                                        <a href="{navigation/socialmedia/youtube}">YouTube</a>
+                                        <a class="ext-youtube" href="{navigation/socialmedia/youtube}">YouTube</a>
                                     </li>
                                 </xsl:if>
                                 <xsl:if test="navigation/socialmedia/other/node()">
