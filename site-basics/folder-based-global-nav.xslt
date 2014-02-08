@@ -19,7 +19,7 @@
                 <li><a class="top-nav-link" href="site://Admissions/admissions/index">Admission<span class="gt32">s</span></a></li>
             </ul>
             <ul class="secondary-nav-list">
-            	<li><a href="/currentstudent" class="secondary-nav-link">Current Students</a></li>
+            	<li><a href="/currentstudent" class="secondary-nav-link"><span class="gt32">Current</span> Students</a></li>
             	<li><a href="/facultystaff" class="secondary-nav-link">Faculty &amp; Staff</a></li>
             	<li><a href="/alumni" class="secondary-nav-link">Alumni</a></li>
             	<li><a href="/community" class="secondary-nav-link">Visitors</a></li>
